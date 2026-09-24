@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda</title>
     <link href="styles.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
      <header class="cabecera">
@@ -14,7 +16,7 @@
             <button type="submit">🔍</button>
         </form> -->
 
-        <h1>Tienda</h1>
+        <h1>Cachimba Records</h1>
 
             <nav class="menu">
             <a href="index.html">Home</a>
@@ -36,13 +38,51 @@
         </nav>
     </header>
 
+
+
     <nav class="Inicio">
         <a href="inicioSesion.html">Iniciar sesion</a>
         <a href="registro.html">registrar</a>
-
     </nav>
 
+    <section class="hero">
+        <h2>¡Musica para regalar!</h2>
+        <p>Encuentra tus vinilos favoritos con envío a todo el país.</p>
+    </section>
 
-    
+    <!-- Seccion de Productos -->
+<main class="contenedor-tienda">
+  <h2>Llegó la cachimba!</h2>
+
+  <div class="grid-productos">
+
+    <!-- Destacado 1 -->
+    <article class="tarjeta-producto" 
+            data-titulo=""
+            data-categoria=""
+            data-precio="$12.990"
+            data-imagen=""
+            data-descripcion="">
+
+      <img src="" alt="Producto 1">
+      <h3>2Pac</h3>
+      <p class=""></p>
+      <p class="precio">$12.990</p>
+
+      <div class="grupo-botones">
+        <a href="producto.html" class="btn-detalles">Ver Producto</a>
+        <button class="btn-comprar">Agregar al Carrito</button>
+      </div>
+    </article>
+
+
+    <footer>
+        <div class="contenido-footer">
+            <p>&copy; 2026 TiendaVinilo - Todos los derechos reservados.</p>
+            <p>Contactos: be.cespedess@duocuc.cl | benj.orellanas@duocuc.cl</p>
+        </div>
+    </footer>
+
+      <script src="script.js"></script>
 </body>
 </html>
