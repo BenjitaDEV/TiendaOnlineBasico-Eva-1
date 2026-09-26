@@ -8,78 +8,128 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-     <header class="cabecera">
-        <!-- <form class="buscador" id="form-busqueda">
-            <input type="text" id="input-busqueda" placeholder="Buscar Producto...">
-            <button type="submit">🔍</button>
-        </form> -->
+    <!-- Contenedor unificado para que la imagen del banner cubra también la cabecera -->
+    <div class="hero-wrapper">
+        <header class="cabecera">
 
-        <h1>Cachimba Records</h1>
+
+            <h1>Cachimba Records</h1>
 
             <nav class="menu">
-            <a href="index.html">Home</a>
-            <a href="productos.html">Productos</a>
-            <a href="nosotros.html">Nosotros</a>
-            <a href="blogs.html">Blogs</a>
-            <a href="contacto.html">Contacto</a>
+                <a href="index.html">Home</a>
+                <a href="productos.html">Productos</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="blogs.html">Blogs</a>
+                <a href="contacto.html">Contacto</a>
 
-            <!-- Desplegable Categorias -->
-            <!-- <div class="dropdown-categoria">
-                <button class="dropdown-btn">CATEGORÍAS ▾</button>
-                <div class="dropdown-content">
-                    <a href="">Desplegable 1</a>
-                    <a href="">Desplegable 2</a>
-                    <a href="">Desplegable 3</a>
-                    <a href="">Desplegable 4</a>
-                </div>
-            </div> -->
+                <!-- Icono del Carrito -->
+                <a href="carrito.html" class="btn-carrito" title="Ver carrito"> 
+                🛒 <span class="carrito-contador">0</span>
+                </a>
+
+                <!-- Desplegable Categorias -->
+                <!-- <div class="dropdown-categoria">
+                    <button class="dropdown-btn">CATEGORÍAS ▾</button>
+                    <div class="dropdown-content">
+                        <a href="">Desplegable 1</a>
+                        <a href="">Desplegable 2</a>
+                        <a href="">Desplegable 3</a>
+                        <a href="">Desplegable 4</a>
+                    </div>
+                </div> -->
+            </nav>
+        </header>
+
+        <nav class="Inicio">
+            <a href="inicioSesion.html">Iniciar sesion</a>
+            <a href="registro.html">registrar</a>
+            <form class="buscador" id="form-busqueda">
+                <input type="text" id="input-busqueda" placeholder="Buscar Producto...">
+                <button type="submit">🔍</button>
+            </form>
         </nav>
-    </header>
 
-
-
-    <nav class="Inicio">
-        <a href="inicioSesion.html">Iniciar sesion</a>
-        <a href="registro.html">registrar</a>
-    </nav>
-
-    <section class="hero">
-        <h2>¡Musica para regalar!</h2>
-        <p>Encuentra tus vinilos favoritos con envío a todo el país.</p>
-    </section>
+        <section class="hero">
+            <h2>¡Musica para regalar!</h2>
+            <p>Encuentra tus vinilos favoritos con envío a todo el país.</p>
+        </section>
+    </div>
 
     <!-- Seccion de Productos -->
-<main class="contenedor-tienda">
-  <h2>Llegó la cachimba!</h2>
+    <main class="contenedor-tienda">
+        <h2>Llegó la cachimba!</h2>
 
-  <div class="grid-productos">
+        <div class="grid-productos">
 
-    <!-- Destacado 1 -->
-    <article class="tarjeta-producto" 
-            data-titulo=""
-            data-categoria=""
-            data-precio="$12.990"
-            data-imagen=""
-            data-descripcion="">
+            <!-- Destacado 1 -->
+            <article class="tarjeta-producto" 
+                    data-titulo="2Pac - All Eyez On Me"
+                    data-categoria="Genero - Hip Hop"
+                    data-precio="$124.990"
+                    data-imagen="/images/2pac - all eyez on me 500x500.jpg"
+                    data-descripcion="ARTISTA: 2 PAC <br><br>
+                                                SELLO: DEATH ROW <br><br>
+                    
+                                                <strong>Disc 1 -</strong>
+                                                    1 Ambitionz Az a Ridah
+                                                    2 All About U
+                                                    3 Skandalouz
+                                                <strong>Disc 2 -</strong>
+                                                    1 Got My Mind Made Up
+                                                    2 How Do U Want It
+                                                    3 2 of Amerikaz Most Wanted
+                                                <strong>Disc 3 -</strong>
+                                                    1 No More Pain
+                                                    2 Heartz of Men
+                                                    3 Life Goes on
+                                                    4 Only God Can Judge Me
+                                                <strong>Disc 4 -</strong>
+                                                    1 Tradin' War Stories
+                                                    2 California Love [Remix]
+                                                    3 I Ain't Mad at Cha
+                                                    4 What's Ya Phone #
+                                                <strong>- Disc 5 -</strong>
+                                                    1 Can't C Me
+                                                    2 Shorty Wanna Be a Thug
+                                                    3 Holla at Me
+                                                    4 Wonda Why They Call U Bytch
+                                                <strong>- Disc 6 -</strong>
+                                                    1 When We Ride
+                                                    2 Thug Passion
+                                                    3 Picture Me Rollin'
+                                                <strong>- Disc 7 -</strong>
+                                                    1 Check Out Time
+                                                    2 Ratha Be Ya Nigga
+                                                    3 All Eyez on Me
+                                                <strong>- Disc 8 -</strong>
+                                                    1 Run Tha Streetz
+                                                    2 Ain't Hard 2 Find
+                                                    3 Heaven Ain't Hard 2 Find.">
+                <a href="detalleProductos.html" class="enlace-tarjeta">
+                    <img src="/images/2pac - all eyez on me 500x500.jpg" alt="Producto 1">
+                    <h3>2Pac - Edición en vinilo de 4 LP de All Eyez On Me</h3>
+                    <p class="categoria-tag">Hip Hop</p>
+                    <p class="precio">$124.990</p>
+                </a>
 
-      <img src="" alt="Producto 1">
-      <h3>2Pac</h3>
-      <p class=""></p>
-      <p class="precio">$12.990</p>
-
-      <div class="grupo-botones">
-        <a href="producto.html" class="btn-detalles">Ver Producto</a>
-        <button class="btn-comprar">Agregar al Carrito</button>
-      </div>
-    </article>
+                <div class="grupo-botones">
+                    <button class="btn-comprar">Agregar al Carrito</button>
+                </div>
+            </article>
+        </div>
+    </main>
 
 
     <footer>
-        <div class="contenido-footer">
-            <p>&copy; 2026 TiendaVinilo - Todos los derechos reservados.</p>
-            <p>Contactos: be.cespedess@duocuc.cl | benj.orellanas@duocuc.cl</p>
+        <div class="contenido-footer">          
+            <img src="/images/Pagos_metodos.png" alt="Métodos de pago">
+            <div class="texto-footer">
+                <p>&copy; 2026 TiendaVinilo - Todos los derechos reservados.</p>
+                <p>Contactos: be.cespedess@duocuc.cl | benj.orellanas@duocuc.cl</p>
+            </div>
         </div>
     </footer>
 
