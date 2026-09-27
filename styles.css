@@ -886,3 +886,37 @@ footer {
     background-position: center;
     background-repeat: no-repeat;
 }
+
+/* ============================= */
+/* PAGINA NOSOTROS */
+/* ============================= */
+
+.nosotros-hero-fondo {
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.62),
+            rgba(0, 0, 0, 0.62)
+        ),
+        url('/images/Banner-Promocional12342980.jpg');
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.nosotros-hero {
+    padding: 70px 20px 90px 20px;
+    margin-bottom: 0;
+}
+
+.nosotros-hero h2 {
+    font-size: 36px;
+    color: white;
+}
+
+.nosotros-hero p {
+    font-family: 'Barlow', sans-serif;
+    font-size: 18px;
+    color: white;
+}
+
