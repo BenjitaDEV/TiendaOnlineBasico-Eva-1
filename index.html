@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tienda</title>
+    <title>CachimbaRecords</title>
     <link href="styles.css" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,13 +14,11 @@
     <!-- Contenedor unificado para que la imagen del banner cubra también la cabecera -->
     <div class="hero-wrapper">
         <header class="cabecera">
-
-
             <h1>Cachimba Records</h1>
 
             <nav class="menu">
                 <a href="index.html">Home</a>
-                <a href="productos.html">Productos</a>
+                <a href="productos.html">Vinilos</a>
                 <a href="nosotros.html">Nosotros</a>
                 <a href="blogs.html">Blogs</a>
                 <a href="contacto.html">Contacto</a>
@@ -45,33 +43,34 @@
 
         <nav class="Inicio">
             <a href="inicioSesion.html">Iniciar sesion</a>
-            <a href="registro.html">registrar</a>
-            <form class="buscador" id="form-busqueda">
-                <input type="text" id="input-busqueda" placeholder="Buscar Producto...">
-                <button type="submit">🔍</button>
-            </form>
+            <a href="registro.html">registrarse</a>
+
         </nav>
 
         <section class="hero">
             <h2>¡Musica para regalar!</h2>
             <p>Encuentra tus vinilos favoritos con envío a todo el país.</p>
+            
+            <form class="buscador" id="form-busqueda">
+                <input type="text" id="input-busqueda" placeholder="Buscar Producto...">
+                <button type="submit">🔍</button>
+            </form>
         </section>
     </div>
 
     <!-- Seccion de Productos -->
     <main class="contenedor-tienda">
-        <h2>Llegó la cachimba!</h2>
-
-        <div class="grid-productos">
+        <h2>Productos Destacados</h2>
+    <div class="grid-productos">
 
             <!-- Destacado 1 -->
-            <article class="tarjeta-producto" 
+            <section class="tarjeta-producto" 
                     data-titulo="2Pac - All Eyez On Me"
                     data-categoria="Genero - Hip Hop"
                     data-precio="$124.990"
                     data-imagen="/images/2pac - all eyez on me 500x500.jpg"
-                    data-descripcion="ARTISTA: 2 PAC <br><br>
-                                                SELLO: DEATH ROW <br><br>
+                    data-descripcion="ARTISTA: 2Pac <br><br>
+                                                SELLO: Death Row <br><br>
                     
                                                 <strong>Disc 1 -</strong>
                                                     1 Ambitionz Az a Ridah
@@ -118,7 +117,73 @@
                 <div class="grupo-botones">
                     <button class="btn-comprar">Agregar al Carrito</button>
                 </div>
-            </article>
+            </section>
+
+            <!-- Destacado 2 -->
+            <section class="tarjeta-producto" 
+                    data-titulo="Los Prisioneros - La voz de los '80"
+                    data-categoria="Genero - Rock Latino"
+                    data-precio="$50.890"
+                    data-imagen="/images/los-prisioneros-la-voz-de-los-80.jpg"
+                    data-descripcion="ARTISTA: Los Prisioneros <br><br>
+                                                SELLO: Fusión <br><br>
+                    
+                                                <strong>TrackList: </strong>
+                                                    1 La Voz De Los '80
+                                                    2 Brigada De Negro
+                                                    3 Latinoamérica Es Un Pueblo Al Sur De Estados Unidos
+                                                    4 Eve-Evelyn
+                                                    5 Sexo
+                                                    6 ¿Quien Mato A Marilyn?
+                                                    7 Paramar
+                                                    8 No Necesitamos Banderas
+                                                    9 Mentalidad Televisiva
+                                                    10 Nunca Quedas Mal Con Nadie.">
+                <a href="detalleProductos.html" class="enlace-tarjeta">
+                    <img src="/images/los-prisioneros-la-voz-de-los-80.jpg" alt="Producto 2">
+                    <h3>Los Prisioneros - La voz de los '80</h3>
+                    <p class="categoria-tag">Rock Latino</p>
+                    <p class="precio">$50.890</p>
+                </a>
+
+                <div class="grupo-botones">
+                    <button class="btn-comprar">Agregar al Carrito</button>
+                </div>
+            </section>
+
+                        <!-- Destacado 10 -->
+            <section class="tarjeta-producto" 
+                    data-titulo="Molotov - ¿Donde jugarán las niñas?"
+                    data-categoria="Genero - Rock alternativo"
+                    data-precio="$190.990"
+                    data-imagen="/images/Molotov–Donde-Jugaran-Las-Ninas.jpg"
+                    data-descripcion="ARTISTA: Molotov <br><br>
+                                                SELLO: Universal Music <br><br>
+                    
+                                                <strong>TrackList: </strong>
+                                                    1 Que No Te Haga Bobo Jacobo
+                                                    2 Molotov Cocktail Party
+                                                    3 Voto Latino
+                                                    4 Chinga Tu Madre
+                                                    5 Gimme Tha Power
+                                                    6 Mátate Teté
+                                                    7 Más Vale Cholo
+                                                    8 Use It Or Lose It
+                                                    9 Puto
+                                                    10 ¿Por Qué No Te Haces Para Allá?... Al Mas Alla 
+                                                    11 Cerdo
+                                                    12 Quítate Que Ma’sturbas (Perra Arrabalera).">
+                <a href="detalleProductos.html" class="enlace-tarjeta">
+                    <img src="/images/Molotov–Donde-Jugaran-Las-Ninas.jpg" alt="Producto 10">
+                    <h3>Molotov - ¿Donde jugarán las niñas? Edicion 20 años</h3>
+                    <p class="categoria-tag">Rock alternativo</p>
+                    <p class="precio">$190.990</p>
+                </a>
+
+                <div class="grupo-botones">
+                    <button class="btn-comprar">Agregar al Carrito</button>
+                </div>
+            </section>
         </div>
     </main>
 
@@ -127,7 +192,7 @@
         <div class="contenido-footer">          
             <img src="/images/Pagos_metodos.png" alt="Métodos de pago">
             <div class="texto-footer">
-                <p>&copy; 2026 TiendaVinilo - Todos los derechos reservados.</p>
+                <p>&copy; 2026 CachimbaRecords - Todos los derechos reservados.</p>
                 <p>Contactos: be.cespedess@duocuc.cl | benj.orellanas@duocuc.cl</p>
             </div>
         </div>
