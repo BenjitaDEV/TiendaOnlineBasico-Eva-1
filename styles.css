@@ -648,3 +648,343 @@ footer {
   transform: translateY(-50%);
   max-width: 180px;
 }
+<<<<<<< HEAD
+=======
+
+.texto-footer {
+  text-align: center; /* Centra el texto */
+  font-size: 14px;
+}
+
+.texto-footer p {
+  margin: 4px 0;
+}
+
+/* ============================= */
+/* PAGINA NOSOTROS */
+/* ============================= */
+
+.nosotros-main {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 30px;
+}
+
+
+/* Presentacion */
+
+.nosotros-presentacion {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 50px auto;
+}
+
+.nosotros-presentacion h2 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.nosotros-presentacion p {
+    font-family: 'Barlow', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #444;
+}
+
+
+/* Mision y vision */
+
+.nosotros-info {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.nosotros-card {
+    flex: 1;
+    background-color: #f4f4f4;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.nosotros-card h3 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 24px;
+    margin-top: 0;
+}
+
+.nosotros-card p {
+    font-family: 'Barlow', sans-serif;
+    line-height: 1.6;
+    color: #444;
+}
+
+
+/* Equipo */
+
+.equipo-nosotros {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.equipo-nosotros h2 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 32px;
+}
+
+.equipo-nosotros > p {
+    font-family: 'Barlow', sans-serif;
+    font-size: 17px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+
+/* Desarrolladores */
+
+.desarrolladores-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.desarrollador-card {
+    width: 300px;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.desarrollador-card h3 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 22px;
+    margin: 10px 0;
+}
+
+.desarrollador-card p {
+    font-family: 'Barlow', sans-serif;
+    line-height: 1.5;
+}
+
+.desarrollador-icono {
+    font-size: 45px;
+}
+
+.rol-desarrollador {
+    font-weight: bold;
+    color: #524686;
+}
+
+.correo-desarrollador {
+    font-size: 14px;
+    color: #666;
+}
+
+
+/* Parte final */
+
+.nosotros-final {
+    text-align: center;
+    padding: 40px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+}
+
+.nosotros-final h2 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 30px;
+}
+
+.nosotros-final p {
+    font-family: 'Barlow', sans-serif;
+    font-size: 17px;
+    margin-bottom: 30px;
+}
+
+
+/* Boton catalogo */
+
+.btn-ver-vinilos {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #1b1a1a;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-family: 'Outfit', sans-serif;
+}
+
+.btn-ver-vinilos:hover {
+    background-color: #524686;
+}
+
+
+/* Responsive */
+
+@media (max-width: 700px) {
+
+    .nosotros-info {
+        flex-direction: column;
+    }
+
+    .desarrolladores-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .desarrollador-card {
+        width: 80%;
+    }
+
+}
+
+
+/* FONDO PAGINA NOSOTROS */
+
+
+.pagina-nosotros {
+    background-color: #f5f5f5;
+}
+
+
+/* Contenedor principal */
+
+.pagina-nosotros .nosotros-main {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 30px;
+}
+
+
+/* Presentacion */
+
+.pagina-nosotros .nosotros-presentacion {
+    background-color: #1b1a1a;
+    color: white;
+    padding: 45px;
+    border-radius: 12px;
+}
+
+.pagina-nosotros .nosotros-presentacion h2 {
+    color: white;
+}
+
+.pagina-nosotros .nosotros-presentacion p {
+    color: #e0e0e0;
+}
+
+
+/* Mision y vision */
+
+.pagina-nosotros .nosotros-card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-top: 5px solid #3a78b3;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+}
+
+
+/* Equipo */
+
+.pagina-nosotros .equipo-nosotros {
+    background-color: #ffffff;
+    padding: 35px;
+    border-radius: 12px;
+}
+
+
+/* Tarjetas de desarrolladores */
+
+.pagina-nosotros .desarrollador-card {
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Rol de desarrollador */
+
+.pagina-nosotros .rol-desarrollador {
+    color: #3a78b3;
+}
+
+
+/* Parte final */
+
+.pagina-nosotros .nosotros-final {
+    background-color: #1b1a1a;
+    color: white;
+}
+
+.pagina-nosotros .nosotros-final h2 {
+    color: white;
+}
+
+.pagina-nosotros .nosotros-final p {
+    color: #e0e0e0;
+}
+
+
+/* Boton catalogo */
+
+.pagina-nosotros .btn-ver-vinilos {
+    background-color: #3a78b3;
+    color: white;
+}
+
+.pagina-nosotros .btn-ver-vinilos:hover {
+    background-color: #1b1a1a;
+    outline: 1px solid white;
+}
+
+/* Imagen del banner del catalogo */
+
+.hero-productos-fondo {
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)
+        ),
+        url('/images/ceraticalle.jpg');
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* ============================= */
+/* PAGINA NOSOTROS */
+/* ============================= */
+
+.nosotros-hero-fondo {
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.62),
+            rgba(0, 0, 0, 0.62)
+        ),
+        url('/images/Banner-Promocional12342980.jpg');
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.nosotros-hero {
+    padding: 70px 20px 90px 20px;
+    margin-bottom: 0;
+}
+
+.nosotros-hero h2 {
+    font-size: 36px;
+    color: white;
+}
+
+.nosotros-hero p {
+    font-family: 'Barlow', sans-serif;
+    font-size: 18px;
+    color: white;
+}
+
+>>>>>>> 9fd2e9f815b266f74b87567826200767c68ba03e

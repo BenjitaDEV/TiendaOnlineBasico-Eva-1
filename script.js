@@ -78,4 +78,153 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
     }
+
+    // 3. VALIDACION DEL INICIO DE SESION
+
+const formLogin = document.getElementById('formLogin');
+
+if (formLogin) {
+
+    formLogin.addEventListener('submit', (e) => {
+
+        e.preventDefault();
+
+        const email = document.getElementById('loginEmail').value.trim();
+        const password = document.getElementById('loginPassword').value.trim();
+
+        const errorEmail = document.getElementById('errorLoginEmail');
+        const errorPassword = document.getElementById('errorLoginPassword');
+        const mensajeExito = document.getElementById('mensajeExitoLogin');
+
+        errorEmail.textContent = '';
+        errorPassword.textContent = '';
+        mensajeExito.textContent = '';
+
+        let valido = true;
+
+        if (email === '') {
+
+            errorEmail.textContent = 'El correo es obligatorio.';
+            valido = false;
+
+        } else if (email.length > 100) {
+
+            errorEmail.textContent = 'El correo no puede superar los 100 caracteres.';
+            valido = false;
+
+        } else if (
+            !email.toLowerCase().endsWith('@duoc.cl') &&
+            !email.toLowerCase().endsWith('@profesor.duoc.cl') &&
+            !email.toLowerCase().endsWith('@gmail.com')
+        ) {
+
+            errorEmail.textContent = 'Debe utilizar un correo @duoc.cl, @profesor.duoc.cl o @gmail.com.';
+            valido = false;
+        }
+
+
+        if (password === '') {
+
+            errorPassword.textContent = 'La contraseña es obligatoria.';
+            valido = false;
+
+        } else if (password.length < 4 || password.length > 10) {
+
+            errorPassword.textContent = 'La contraseña debe tener entre 4 y 10 caracteres.';
+            valido = false;
+        }
+
+
+        if (valido) {
+
+            mensajeExito.textContent = 'Inicio de sesión correcto.';
+            formLogin.reset();
+        }
+
+    });
+
+}
+
+
+// 4. VALIDACION DEL FORMULARIO DE CONTACTO
+
+const formContacto = document.getElementById('formContacto');
+
+if (formContacto) {
+
+    formContacto.addEventListener('submit', (e) => {
+
+        e.preventDefault();
+
+        const nombre = document.getElementById('nombreContacto').value.trim();
+        const email = document.getElementById('emailContacto').value.trim();
+        const mensaje = document.getElementById('mensajeContacto').value.trim();
+
+        const errorNombre = document.getElementById('errorNombreContacto');
+        const errorEmail = document.getElementById('errorEmailContacto');
+        const errorMensaje = document.getElementById('errorMensajeContacto');
+        const mensajeExito = document.getElementById('mensajeExitoContacto');
+
+        errorNombre.textContent = '';
+        errorEmail.textContent = '';
+        errorMensaje.textContent = '';
+        mensajeExito.textContent = '';
+
+        let valido = true;
+
+
+        if (nombre === '') {
+
+            errorNombre.textContent = 'El nombre es obligatorio.';
+            valido = false;
+
+        } else if (nombre.length > 100) {
+
+            errorNombre.textContent = 'El nombre no puede superar los 100 caracteres.';
+            valido = false;
+        }
+
+
+        if (email.length > 100) {
+
+            errorEmail.textContent = 'El correo no puede superar los 100 caracteres.';
+            valido = false;
+
+        } else if (
+            email !== '' &&
+            !email.toLowerCase().endsWith('@duoc.cl') &&
+            !email.toLowerCase().endsWith('@profesor.duoc.cl') &&
+            !email.toLowerCase().endsWith('@gmail.com')
+        ) {
+
+            errorEmail.textContent = 'Debe utilizar un correo @duoc.cl, @profesor.duoc.cl o @gmail.com.';
+            valido = false;
+        }
+
+
+        if (mensaje === '') {
+
+            errorMensaje.textContent = 'El comentario es obligatorio.';
+            valido = false;
+
+        } else if (mensaje.length > 500) {
+
+            errorMensaje.textContent = 'El comentario no puede superar los 500 caracteres.';
+            valido = false;
+        }
+
+
+        if (valido) {
+
+            mensajeExito.textContent = 'Mensaje enviado correctamente.';
+
+            alert('Mensaje enviado correctamente.');
+
+            formContacto.reset();
+        }
+
+    });
+
+}
 });
+
