@@ -5,30 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detalles del Producto</title>
     <link href="styles.css" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Contenedor unificado para que la imagen del banner cubra también la cabecera -->
     <div class="hero-wrapper">
         <header class="cabecera">
-
             <h1>Cachimba Records</h1>
-
             <nav class="menu">
                 <a href="index.html">Home</a>
                 <a href="productos.html">Vinilos</a>
                 <a href="nosotros.html">Nosotros</a>
                 <a href="blogs.html">Blogs</a>
                 <a href="contacto.html">Contacto</a>
-
-                <!-- Icono del Carrito -->
                 <a href="carrito.html" class="btn-carrito" title="Ver carrito"> 
-                🛒 <span class="carrito-contador">0</span>
+                    🛒 <span class="carrito-contador">0</span>
                 </a>
-
             </nav>
         </header>
 
@@ -36,12 +31,26 @@
             <a href="inicioSesion.html">Iniciar sesion</a>
             <a href="registro.html">registrarse</a>
         </nav>
+    </div>
 
     <main class="contenedor-tienda">
-        <div class="pagina-detalle-producto">
 
+        <nav class="breadcrumbs">
+            <a href="index.html">Home</a> &gt; 
+            <a href="productos.html" id="breadcrumbCategoria">Vinilos</a> &gt; 
+            <span id="breadcrumbTitulo">Detalle Producto</span>
+        </nav>
+
+        <div class="pagina-detalle-producto">
+            
             <div class="Columna-imagen">
-                <img id="detalleImagen" src="" alt="Portada Albúm">    
+                <img id="detalleImagen" src="" alt="Portada Albúm"> 
+                
+                <div class="galeria-miniaturas">
+                    <img class="miniatura activa" id="thumb1" src="" alt="Vista 1">
+                    <img class="miniatura" id="thumb2" src="" alt="Vista 2">
+                    <img class="miniatura" id="thumb3" src="" alt="Vista 3">
+                </div>   
             </div>
 
             <div class="columna-info">
@@ -50,7 +59,18 @@
                 <p id="detallePrecio" class="precio"></p>
                 <hr>
                 <h3>Sinopsis:</h3>
-                <p id="detalleDescripcion">Cargando descripción...</p>
+                <div id="detalleDescripcion" class="texto-descripcion">Cargando descripción...</div>
+
+                <!-- Selector de Cantidad (Mockup) -->
+                <div class="selector-cantidad">
+                    <label for="cantidadProducto">Cantidad:</label>
+                    <select id="cantidadProducto">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </div>
 
                 <div class="acciones-producto">
                     <button id="btnDetalleAgregar" class="btn-comprar">Agregar al Carrito</button>
@@ -58,8 +78,15 @@
                 </div>
             </div>
         </div>
-    </main>
 
+        <!-- Productos Relacionados -->
+        <section class="seccion-relacionados">
+            <h3>Productos Relacionados</h3>
+            <div class="grid-productos" id="contenedorRelacionados">
+                <!-- Se puebla dinámicamente desde JavaScript -->
+            </div>
+        </section>
+    </main>
 
     <footer>
         <div class="contenido-footer">          
@@ -71,6 +98,6 @@
         </div>
     </footer>
 
-      <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

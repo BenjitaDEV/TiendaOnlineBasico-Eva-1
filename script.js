@@ -5,20 +5,25 @@ document.addEventListener('DOMContentLoaded', () => {
 
     tarjetas.forEach(tarjeta => {
         tarjeta.addEventListener('click', (e) => {
-            // Si hace clic en el botón "Agregar al Carrito", no redirige a la página de detalle
+            // Si hace clic en el botón "Agregar al Carrito", no redirige
             if (e.target.classList.contains('btn-comprar')) {
                 return;
             }
+
+            const imgPrincipal = tarjeta.dataset.imagen || tarjeta.querySelector('img')?.src;
 
             const viniloSeleccionado = {
                 titulo: tarjeta.dataset.titulo || tarjeta.querySelector('h3')?.textContent,
                 categoria: tarjeta.dataset.categoria || tarjeta.querySelector('.categoria-tag')?.textContent,
                 precio: tarjeta.dataset.precio || tarjeta.querySelector('.precio')?.textContent,
-                imagen: tarjeta.dataset.imagen || tarjeta.querySelector('img')?.src,
+                imagen: imgPrincipal,
+                // CAPTURAMOS DATA-IMAGEN2 Y DATA-IMAGEN3 (o respaldamos con la principal)
+                imagen2: tarjeta.dataset.imagen2 || imgPrincipal,
+                imagen3: tarjeta.dataset.imagen3 || imgPrincipal,
                 descripcion: tarjeta.dataset.descripcion || 'Sinopsis no disponible para este vinilo por el momento.'
             };
 
-            // Guarda el objeto en localStorage con la clave 'viniloSeleccionado'
+            // Guarda el objeto en localStorage
             localStorage.setItem('viniloSeleccionado', JSON.stringify(viniloSeleccionado));
 
             // Redirige a detalleProductos.html
@@ -38,13 +43,33 @@ document.addEventListener('DOMContentLoaded', () => {
             document.getElementById('detallePrecio').textContent = vinilo.precio;
             document.getElementById('detalleDescripcion').innerHTML = vinilo.descripcion;
 
+            // Imagen Principal
             const imgElem = document.getElementById('detalleImagen');
             if (imgElem) {
                 imgElem.src = vinilo.imagen;
                 imgElem.alt = `Vinilo ${vinilo.titulo}`;
             }
 
-            // Evento para el botón de agregar al carrito dentro de detalleProductos.html
+            // CARGAR LAS TRES MINIATURAS
+            const thumb1 = document.getElementById('thumb1');
+            const thumb2 = document.getElementById('thumb2');
+            const thumb3 = document.getElementById('thumb3');
+
+            if (thumb1) thumb1.src = vinilo.imagen;
+            if (thumb2) thumb2.src = vinilo.imagen2;
+            if (thumb3) thumb3.src = vinilo.imagen3;
+
+            // INTERACTIVIDAD: Al hacer clic en una miniatura, cambia la imagen grande
+            const miniaturas = document.querySelectorAll('.miniatura');
+            miniaturas.forEach(miniatura => {
+                miniatura.addEventListener('click', function() {
+                    miniaturas.forEach(m => m.classList.remove('activa'));
+                    this.classList.add('activa');
+                    if (imgElem) imgElem.src = this.src;
+                });
+            });
+
+            // Botón Agregar al Carrito
             const btnAgregarDetalle = document.getElementById('btnDetalleAgregar');
             if (btnAgregarDetalle) {
                 btnAgregarDetalle.addEventListener('click', () => {
