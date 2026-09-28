@@ -648,17 +648,8 @@ footer {
   transform: translateY(-50%);
   max-width: 180px;
 }
-<<<<<<< HEAD
-=======
 
-.texto-footer {
-  text-align: center; /* Centra el texto */
-  font-size: 14px;
-}
 
-.texto-footer p {
-  margin: 4px 0;
-}
 
 /* ============================= */
 /* PAGINA NOSOTROS */
@@ -986,5 +977,3 @@ footer {
     font-size: 18px;
     color: white;
 }
-
->>>>>>> 9fd2e9f815b266f74b87567826200767c68ba03e

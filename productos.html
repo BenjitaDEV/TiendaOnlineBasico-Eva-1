@@ -1,307 +1,182 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< HEAD
-    <title>Productos</title>
-=======
-
     <title>CachimbaRecords</title>
-
->>>>>>> 9fd2e9f815b266f74b87567826200767c68ba03e
     <link href="styles.css" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Outfit:wght@100..900&display=swap"
-        rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
     <div class="hero-wrapper hero-productos-fondo">
-
         <header class="cabecera">
-
             <h1>Cachimba Records</h1>
-
             <nav class="menu">
-
                 <a href="index.html">Home</a>
                 <a href="productos.html">Vinilos</a>
                 <a href="nosotros.html">Nosotros</a>
                 <a href="blogs.html">Blogs</a>
                 <a href="contacto.html">Contacto</a>
-
-                <!-- Icono del Carrito -->
                 <a href="carrito.html" class="btn-carrito" title="Ver carrito">
-                    🛒 <span class="carrito-contador">0</span>
+                🛒 <span class="carrito-contador">0</span>
                 </a>
-
             </nav>
-
         </header>
 
 
         <nav class="Inicio">
-
             <a href="inicioSesion.html">Iniciar sesion</a>
-
             <a href="registro.html">Registrarse</a>
-
         </nav>
-
-
         <section class="hero">
-
             <h2>Encuentra tu próximo vinilo</h2>
-
-            <p>
-                Explora nuestro catálogo y encuentra tus discos favoritos.
-            </p>
+            <p>Explora nuestro catálogo y encuentra tus discos favoritos.</p>
 
             <form class="buscador" id="form-busqueda">
-
-                <input
-                    type="text"
-                    id="input-busqueda"
-                    placeholder="Buscar Vinilo..."
-                >
-
+                <input type="text" id="input-busqueda" placeholder="Buscar Vinilo...">
                 <button type="submit">🔍</button>
-
             </form>
-
         </section>
-
     </div>
 
-
     <!-- Seccion de Productos -->
-
     <main class="contenedor-tienda">
-
         <h2>Vinilos</h2>
-
-
         <div class="grid-productos">
 
-
             <!-- Producto 1 -->
-
-            <section
-                class="tarjeta-producto"
-                data-titulo="2Pac - All Eyez On Me"
-                data-categoria="Genero - Hip Hop"
-                data-precio="$124.990"
-                data-imagen="/images/2pac - all eyez on me 500x500.jpg"
-                data-descripcion="ARTISTA: 2Pac <br><br>
-                SELLO: Death Row <br><br>
-
-                <strong>Disc 1 -</strong><br>
-                1 Ambitionz Az a Ridah<br>
-                2 All About U<br>
-                3 Skandalouz<br><br>
-
-                <strong>Disc 2 -</strong><br>
-                1 Got My Mind Made Up<br>
-                2 How Do U Want It<br>
-                3 2 of Amerikaz Most Wanted<br><br>
-
-                <strong>Disc 3 -</strong><br>
-                1 No More Pain<br>
-                2 Heartz of Men<br>
-                3 Life Goes on<br>
-                4 Only God Can Judge Me<br><br>
-
-                <strong>Disc 4 -</strong><br>
-                1 Tradin' War Stories<br>
-                2 California Love [Remix]<br>
-                3 I Ain't Mad at Cha<br>
-                4 What's Ya Phone #<br><br>
-
-                <strong>Disc 5 -</strong><br>
-                1 Can't C Me<br>
-                2 Shorty Wanna Be a Thug<br>
-                3 Holla at Me<br>
-                4 Wonda Why They Call U Bytch<br><br>
-
-                <strong>Disc 6 -</strong><br>
-                1 When We Ride<br>
-                2 Thug Passion<br>
-                3 Picture Me Rollin'<br><br>
-
-                <strong>Disc 7 -</strong><br>
-                1 Check Out Time<br>
-                2 Ratha Be Ya Nigga<br>
-                3 All Eyez on Me<br><br>
-
-                <strong>Disc 8 -</strong><br>
-                1 Run Tha Streetz<br>
-                2 Ain't Hard 2 Find<br>
-                3 Heaven Ain't Hard 2 Find."
-            >
-
+            <section class="tarjeta-producto" 
+                    data-titulo="2Pac - All Eyez On Me"
+                    data-categoria="Genero - Hip Hop"
+                    data-precio="$124.990"
+                    data-imagen="/images/2pac - all eyez on me 500x500.jpg"
+                    data-descripcion="ARTISTA: 2Pac <br><br>
+                                                SELLO: Death Row <br><br>
+                    
+                                                <strong>Disc 1 -</strong>
+                                                    1 Ambitionz Az a Ridah
+                                                    2 All About U
+                                                    3 Skandalouz
+                                                <strong>Disc 2 -</strong>
+                                                    1 Got My Mind Made Up
+                                                    2 How Do U Want It
+                                                    3 2 of Amerikaz Most Wanted
+                                                <strong>Disc 3 -</strong>
+                                                    1 No More Pain
+                                                    2 Heartz of Men
+                                                    3 Life Goes on
+                                                    4 Only God Can Judge Me
+                                                <strong>Disc 4 -</strong>
+                                                    1 Tradin' War Stories
+                                                    2 California Love [Remix]
+                                                    3 I Ain't Mad at Cha
+                                                    4 What's Ya Phone #
+                                                <strong>- Disc 5 -</strong>
+                                                    1 Can't C Me
+                                                    2 Shorty Wanna Be a Thug
+                                                    3 Holla at Me
+                                                    4 Wonda Why They Call U Bytch
+                                                <strong>- Disc 6 -</strong>
+                                                    1 When We Ride
+                                                    2 Thug Passion
+                                                    3 Picture Me Rollin'
+                                                <strong>- Disc 7 -</strong>
+                                                    1 Check Out Time
+                                                    2 Ratha Be Ya Nigga
+                                                    3 All Eyez on Me
+                                                <strong>- Disc 8 -</strong>
+                                                    1 Run Tha Streetz
+                                                    2 Ain't Hard 2 Find
+                                                    3 Heaven Ain't Hard 2 Find.">
                 <a href="detalleProductos.html" class="enlace-tarjeta">
-
-                    <img
-                        src="/images/2pac - all eyez on me 500x500.jpg"
-                        alt="2Pac - All Eyez On Me"
-                    >
-
-                    <h3>
-                        2Pac - Edición en vinilo de 4 LP de All Eyez On Me
-                    </h3>
-
-                    <p class="categoria-tag">
-                        Hip Hop
-                    </p>
-
-                    <p class="precio">
-                        $124.990
-                    </p>
-
+                    <img src="/images/2pac - all eyez on me 500x500.jpg" alt="2Pac - All Eyez On Me">
+                    <h3>2Pac - Edición en vinilo de 4 LP de All Eyez On Me</h3>
+                    <p class="categoria-tag">Hip Hop</p>
+                    <p class="precio">$124.990</p>
                 </a>
 
                 <div class="grupo-botones">
-
-                    <button class="btn-comprar">
-                        Agregar al Carrito
-                    </button>
-
+                    <button class="btn-comprar">Agregar al Carrito</button>
                 </div>
-
             </section>
 
 
 
             <!-- Producto 2 -->
-
-            <section
-                class="tarjeta-producto"
-                data-titulo="Los Prisioneros - La voz de los '80"
-                data-categoria="Genero - Rock Latino"
-                data-precio="$50.890"
-                data-imagen="/images/los-prisioneros-la-voz-de-los-80.jpg"
-                data-descripcion="ARTISTA: Los Prisioneros <br><br>
-                SELLO: Fusión <br><br>
-
-                <strong>TrackList:</strong><br>
-                1 La Voz De Los '80<br>
-                2 Brigada De Negro<br>
-                3 Latinoamérica Es Un Pueblo Al Sur De Estados Unidos<br>
-                4 Eve-Evelyn<br>
-                5 Sexo<br>
-                6 ¿Quien Mato A Marilyn?<br>
-                7 Paramar<br>
-                8 No Necesitamos Banderas<br>
-                9 Mentalidad Televisiva<br>
-                10 Nunca Quedas Mal Con Nadie."
-            >
-
+            <section class="tarjeta-producto" 
+                    data-titulo="Los Prisioneros - La voz de los '80"
+                    data-categoria="Genero - Rock Latino"
+                    data-precio="$50.890"
+                    data-imagen="/images/los-prisioneros-la-voz-de-los-80.jpg"
+                    data-imagen2="/images/2pac - all eyez on me 500x500.jpg"
+                    data-descripcion="ARTISTA: Los Prisioneros <br><br>
+                                                SELLO: Fusión <br><br>
+                    
+                                                <strong>TrackList: </strong>
+                                                    1 La Voz De Los '80
+                                                    2 Brigada De Negro
+                                                    3 Latinoamérica Es Un Pueblo Al Sur De Estados Unidos
+                                                    4 Eve-Evelyn
+                                                    5 Sexo
+                                                    6 ¿Quien Mato A Marilyn?
+                                                    7 Paramar
+                                                    8 No Necesitamos Banderas
+                                                    9 Mentalidad Televisiva
+                                                    10 Nunca Quedas Mal Con Nadie.">
                 <a href="detalleProductos.html" class="enlace-tarjeta">
-
-                    <img
-                        src="/images/los-prisioneros-la-voz-de-los-80.jpg"
-                        alt="Los Prisioneros - La voz de los 80"
-                    >
-
-                    <h3>
-                        Los Prisioneros - La voz de los '80
-                    </h3>
-
-                    <p class="categoria-tag">
-                        Rock Latino
-                    </p>
-
-                    <p class="precio">
-                        $50.890
-                    </p>
-
+                    <img src="/images/los-prisioneros-la-voz-de-los-80.jpg" alt="Los Prisioneros - La voz de los '80">
+                    <h3>Los Prisioneros - La voz de los '80</h3>
+                    <p class="categoria-tag">Rock Latino</p>
+                    <p class="precio">$50.890</p>
                 </a>
 
                 <div class="grupo-botones">
-
-                    <button class="btn-comprar">
-                        Agregar al Carrito
-                    </button>
-
+                    <button class="btn-comprar">Agregar al Carrito</button>
                 </div>
-
             </section>
-
-
 
             <!-- Producto 3 -->
-
-            <section
-                class="tarjeta-producto"
-                data-titulo="Gustavo Cerati - Bocanada"
-                data-categoria="Genero - Rock Latino"
-                data-precio="$59.990"
-                data-imagen="/images/Bocanada-Cerati.jpg"
-                data-descripcion="ARTISTA: Gustavo Cerati <br><br>
-                SELLO: Sony Music <br><br>
-
-                <strong>TrackList:</strong><br>
-                1 Tabú<br>
-                2 Engaña<br>
-                3 Bocanada<br>
-                4 Puente<br>
-                5 Río Babel<br>
-                6 Beautiful<br>
-                7 Perdonar Es Divino<br>
-                8 Verbo Carne<br>
-                9 Raíz<br>
-                10 Y Si El Humo Está En Foco...<br>
-                11 Paseo Inmoral<br>
-                12 Aquí Y Ahora (Los Primeros Tres Minutos)<br>
-                13 Aquí y Ahora (Y Después)<br>
-                14 Alma<br>
-                15 Balsa."
-            >
-
+            <section class="tarjeta-producto" 
+                    data-titulo="Gustavo Cerati - Bocanada"
+                    data-categoria="Genero - Rock Latino"
+                    data-precio="$59.990"
+                    data-imagen="/images/Bocanada-Cerati.jpg"
+                    data-descripcion="ARTISTA: Gustavo Cerati <br><br>
+                                                SELLO: Sony Music <br><br>
+                    
+                                                <strong>TrackList: </strong>
+                                                    1 Tabú
+                                                    2 Engaña
+                                                    3 Bocanada
+                                                    4 Puente
+                                                    5 Río Babel
+                                                    6 Beautiful
+                                                    7 Perdonar Es Divino
+                                                    8 Verbo Carne
+                                                    9 Raíz
+                                                    10 Y Si El Humo Está En Foco...
+                                                    11 Paseo Inmoral
+                                                    12 Aquí Y Ahora (Los Primeros Tres Minutos)	
+                                                    13 Aquí y Ahora (Y Después)
+                                                    14 Alma
+                                                    15 Balsa.">
                 <a href="detalleProductos.html" class="enlace-tarjeta">
-
-                    <img
-                        src="/images/Bocanada-Cerati.jpg"
-                        alt="Gustavo Cerati - Bocanada"
-                    >
-
-                    <h3>
-                        Gustavo Cerati - Bocanada
-                    </h3>
-
-                    <p class="categoria-tag">
-                        Rock Latino
-                    </p>
-
-                    <p class="precio">
-                        $59.990
-                    </p>
-
+                    <img src="/images/Bocanada-Cerati.jpg" alt="Gustavo Cerati - Bocanada">
+                    <h3>Gustavo Cerati - Bocanada</h3>
+                    <p class="categoria-tag">Rock Latino</p>
+                    <p class="precio">$59.990</p>
                 </a>
 
                 <div class="grupo-botones">
-
-                    <button class="btn-comprar">
-                        Agregar al Carrito
-                    </button>
-
+                    <button class="btn-comprar">Agregar al Carrito</button>
                 </div>
-
             </section>
 
-<<<<<<< HEAD
-                        <!-- Destacado 9 -->
+            <!-- Destacado 4 -->
             <section class="tarjeta-producto" 
                     data-titulo="Tiro de gracia - GRANDES EXITOS"
                     data-categoria="Genero - Hip hop"
@@ -310,21 +185,21 @@
                     data-descripcion="ARTISTA: Tiro de gracia <br><br>
                                                 SELLO: Universal Music Chile<br><br>
                     
-                                                <strong>TrackList: </strong>
-                                                    1 Juego Verdadero
-                                                    2 Eso de ser Papá
-                                                    3 Chupacabras
-                                                    4 Sueños
-                                                    5 America
-                                                    6 El Hip & Hop show
-                                                    7 Nuestra Fiesta
-                                                    8 Joven de la Pobla
-                                                    9 Decision
-                                                    10 Ser humano
-                                                    11 Viaje sin rumbo
+                                                <strong>TrackList: </strong><br>
+                                                    1 Juego Verdadero<br>
+                                                    2 Eso de ser Papá<br>
+                                                    3 Chupacabras<br>
+                                                    4 Sueños<br>
+                                                    5 America<br>
+                                                    6 El Hip & Hop show<br>
+                                                    7 Nuestra Fiesta<br>
+                                                    8 Joven de la Pobla<br>
+                                                    9 Decision<br>
+                                                    10 Ser humano<br>
+                                                    11 Viaje sin rumbo<br>
                                                     12 Melaza.">
                 <a href="detalleProductos.html" class="enlace-tarjeta">
-                    <img src="/images/tiro-de-gracia-grandes-exitos.jpg" alt="Producto 9">
+                    <img src="/images/tiro-de-gracia-grandes-exitos.jpg" alt="Tiro de gracia - GRANDES EXITOS">
                     <h3>Tiro de gracia - GRANDES EXITOS</h3>
                     <p class="categoria-tag">Hip Hop</p>
                     <p class="precio">$34.493</p>
@@ -335,206 +210,113 @@
                 </div>
             </section>
 
-                        <!-- Destacado 10 -->
+                        <!-- Destacado 5 -->
             <section class="tarjeta-producto" 
                     data-titulo="Molotov - ¿Donde jugarán las niñas?"
                     data-categoria="Genero - Rock alternativo"
                     data-precio="$190.990"
                     data-imagen="/images/Molotov–Donde-Jugaran-Las-Ninas.jpg"
+                    data-imagen2="/images/Molotov–Donde-Jugaran-Las-Ninas-BACK.jpg"
+                    data-imagen3="/images/vinil-molotov-donde-jugaran-las-niñas.jpg"
                     data-descripcion="ARTISTA: Molotov <br><br>
                                                 SELLO: Universal Music <br><br>
                     
                                                 <strong>TrackList: </strong>
-                                                    1 Que No Te Haga Bobo Jacobo
-                                                    2 Molotov Cocktail Party
-                                                    3 Voto Latino
-                                                    4 Chinga Tu Madre
-                                                    5 Gimme Tha Power
-                                                    6 Mátate Teté
-                                                    7 Más Vale Cholo
-                                                    8 Use It Or Lose It
-                                                    9 Puto
-                                                    10 ¿Por Qué No Te Haces Para Allá?... Al Mas Alla 
-                                                    11 Cerdo
+                                                    1 Que No Te Haga Bobo Jacobo<br>
+                                                    2 Molotov Cocktail Party<br>
+                                                    3 Voto Latino<br>
+                                                    4 Chinga Tu Madre<br>
+                                                    5 Gimme Tha Power<br>
+                                                    6 Mátate Teté<br>
+                                                    7 Más Vale Cholo<br>
+                                                    8 Use It Or Lose It<br>
+                                                    9 Puto<br>
+                                                    10 ¿Por Qué No Te Haces Para Allá?... Al Mas Alla <br>
+                                                    11 Cerdo<br>
                                                     12 Quítate Que Ma’sturbas (Perra Arrabalera).">
-=======
-
-
-            <!-- Producto 4 -->
-
-            <section
-                class="tarjeta-producto"
-                data-titulo="Molotov - ¿Donde jugarán las niñas?"
-                data-categoria="Genero - Rock alternativo"
-                data-precio="$190.990"
-                data-imagen="/images/Molotov–Donde-Jugaran-Las-Ninas.jpg"
-                data-descripcion="ARTISTA: Molotov <br><br>
-                SELLO: Universal Music <br><br>
-
-                <strong>TrackList:</strong><br>
-                1 Que No Te Haga Bobo Jacobo<br>
-                2 Molotov Cocktail Party<br>
-                3 Voto Latino<br>
-                4 Chinga Tu Madre<br>
-                5 Gimme Tha Power<br>
-                6 Mátate Teté<br>
-                7 Más Vale Cholo<br>
-                8 Use It Or Lose It<br>
-                9 Puto<br>
-                10 ¿Por Qué No Te Haces Para Allá?... Al Mas Alla<br>
-                11 Cerdo<br>
-                12 Quítate Que Ma’sturbas (Perra Arrabalera)."
-            >
-
->>>>>>> 9fd2e9f815b266f74b87567826200767c68ba03e
                 <a href="detalleProductos.html" class="enlace-tarjeta">
-
-                    <img
-                        src="/images/Molotov–Donde-Jugaran-Las-Ninas.jpg"
-                        alt="Molotov - Donde jugarán las niñas"
-                    >
-
-                    <h3>
-                        Molotov - ¿Donde jugarán las niñas? Edicion 20 años
-                    </h3>
-
-                    <p class="categoria-tag">
-                        Rock alternativo
-                    </p>
-
-                    <p class="precio">
-                        $190.990
-                    </p>
-
+                    <img src="/images/Molotov–Donde-Jugaran-Las-Ninas.jpg" alt="Molotov - ¿Donde jugarán las niñas?">
+                    <h3>Molotov - ¿Donde jugarán las niñas? Edicion 20 años</h3>
+                    <p class="categoria-tag">Rock alternativo</p>
+                    <p class="precio">$190.990</p>
                 </a>
 
                 <div class="grupo-botones">
-
-                    <button class="btn-comprar">
-                        Agregar al Carrito
-                    </button>
-
+                    <button class="btn-comprar">Agregar al Carrito</button>
                 </div>
-
             </section>
-
-
 
             <!-- Producto 5 -->
 
-            <section
-                class="tarjeta-producto"
-                data-titulo="Fuerza Regida - 111XPANTIA"
-                data-categoria="Genero - Regional Mexicano"
-                data-precio="$44.990"
-                data-imagen="/images/11xpantia.jpg"
-                data-descripcion="ARTISTA: Fuerza Regida <br><br>
-                ALBUM: 111XPANTIA <br><br>
+            <section class="tarjeta-producto"
+                    data-titulo="Fuerza Regida - 111XPANTIA"
+                    data-categoria="Genero - Regional Mexicano"
+                    data-precio="$44.990"
+                    data-imagen="/images/11xpantia.jpg"
+                    data-descripcion="ARTISTA: Fuerza Regida <br><br>
+                                        SELLO: Rancho Humilde, Sony Music Latin <br><br>
+                                        ALBUM: 111XPANTIA <br><br>
 
-                <strong>TrackList:</strong><br>
-                1 GodFather<br>
-                2 ayy weyy<br>
-                3 Nocturno<br>
-                4 peliculiando<br>
-                5 CHAVALITAS<br>
-                6 Por Esos Ojos<br>
-                7 ANSIEDAD<br>
-                8 TU SANCHO<br>
-                9 Marlboro Rojo<br>
-                10 chufulas<br>
-                11 CHAKA<br>
-                12 caperuza"
-            >
-
+                                        <strong>TrackList:</strong><br>
+                                        1 GodFather<br>
+                                        2 ayy weyy<br>
+                                        3 Nocturno<br>
+                                        4 peliculiando<br>
+                                        5 CHAVALITAS<br>
+                                        6 Por Esos Ojos<br>
+                                        7 ANSIEDAD<br>
+                                        8 TU SANCHO<br>
+                                        9 Marlboro Rojo<br>
+                                        10 chufulas<br>
+                                        11 CHAKA<br>
+                                        12 caperuza.">
                 <a href="detalleProductos.html" class="enlace-tarjeta">
-
-                    <img
-                        src="/images/11xpantia.jpg"
-                        alt="Fuerza Regida - 111XPANTIA"
-                    >
-
-                    <h3>
-                        Fuerza Regida - 111XPANTIA
-                    </h3>
-
-                    <p class="categoria-tag">
-                        Regional Mexicano
-                    </p>
-
-                    <p class="precio">
-                        $44.990
-                    </p>
-
+                    <img src="/images/11xpantia.jpg" alt="Fuerza Regida - 111XPANTIA">
+                    <h3>Fuerza Regida - 111XPANTIA</h3>
+                    <p class="categoria-tag"> Regional Mexicano</p>
+                    <p class="precio"> $44.990</p>
                 </a>
 
                 <div class="grupo-botones">
-
-                    <button class="btn-comprar">
-                        Agregar al Carrito
-                    </button>
-
+                    <button class="btn-comprar"> Agregar al Carrito</button>
                 </div>
-
             </section>
 
 
 
             <!-- Producto 6 -->
+            <section class="tarjeta-producto"
+                    data-titulo="Chico Trujillo - Plato Único Bailable"
+                    data-categoria="Genero - Cumbia"
+                    data-precio="$39.990"
+                    data-imagen="/images/ct-pub.jpg"
+                    data-descripcion="ARTISTA: Chico Trujillo <br><br>
+                                    SELLO: Edición Independiente <br><br>
+                                    ALBUM: Plato Único Bailable <br><br>
 
-            <section
-                class="tarjeta-producto"
-                data-titulo="Chico Trujillo - Plato Único Bailable"
-                data-categoria="Genero - Cumbia"
-                data-precio="$39.990"
-                data-imagen="/images/ct-pub.jpg"
-                data-descripcion="ARTISTA: Chico Trujillo <br><br>
-                ALBUM: Plato Único Bailable <br><br>
-
-                <strong>TrackList:</strong><br>
-                1 Varga-Varga<br>
-                2 Lanzaplatos<br>
-                3 Loca<br>
-                4 No Me Pregunten Cómo Es Mi Muchacha<br>
-                5 La Cosecha de Mujeres<br>
-                6 Los Sabanales<br>
-                7 Ahora Quién<br>
-                8 Dolor<br>
-                9 Sin Excusas<br>
-                10 Quémame los Ojos"
-            >
-
+                                    <strong>TrackList:</strong><br>
+                                    1 Varga-Varga<br>
+                                    2 Lanzaplatos<br>
+                                    3 Loca<br>
+                                    4 No Me Pregunten Cómo Es Mi Muchacha<br>
+                                    5 La Cosecha de Mujeres<br>
+                                    6 Los Sabanales<br>
+                                    7 Ahora Quién<br>
+                                    8 Dolor<br>
+                                    9 Sin Excusas<br>
+                                    10 Quémame los Ojos">
                 <a href="detalleProductos.html" class="enlace-tarjeta">
-
-                    <img
-                        src="/images/ct-pub.jpg"
-                        alt="Chico Trujillo - Plato Único Bailable"
-                    >
-
-                    <h3>
-                        Chico Trujillo - Plato Único Bailable
-                    </h3>
-
-                    <p class="categoria-tag">
-                        Cumbia
-                    </p>
-
-                    <p class="precio">
-                        $39.990
-                    </p>
-
+                    <img src="/images/ct-pub.jpg" alt="Chico Trujillo - Plato Único Bailable">
+                    <h3> Chico Trujillo - Plato Único Bailable</h3>
+                    <p class="categoria-tag">Cumbia</p>
+                    <p class="precio">$39.990</p>
                 </a>
 
                 <div class="grupo-botones">
-
-                    <button class="btn-comprar">
-                        Agregar al Carrito
-                    </button>
-
+                    <button class="btn-comprar">Agregar al Carrito</button>
+                        
                 </div>
-
             </section>
-
-
 
             <!-- Producto 7 -->
 
@@ -582,107 +364,67 @@
 
                 <div class="grupo-botones">
 
-                    <button class="btn-comprar">
-                        Agregar al Carrito
-                    </button>
+                    <button class="btn-comprar">Agregar al Carrito</button>
+                        
+                    
 
                 </div>
-
             </section>
 
 
 
             <!-- Producto 8 -->
 
-            <section
-                class="tarjeta-producto"
-                data-titulo="Radiohead - OK Computer"
-                data-categoria="Genero - Rock Alternativo"
-                data-precio="$49.990"
-                data-imagen="/images/okcomputer.jpg"
-                data-descripcion="ARTISTA: Radiohead <br><br>
-                ALBUM: OK Computer <br><br>
+            <section class="tarjeta-producto"
+                    data-titulo="Radiohead - OK Computer"
+                    data-categoria="Genero - Rock Alternativo"
+                    data-precio="$49.990"
+                    data-imagen="/images/okcomputer.jpg"
+                    data-descripcion="ARTISTA: Radiohead <br><br>
+                                    ALBUM: OK Computer <br><br>
 
-                <strong>TrackList:</strong><br>
-                1 Airbag<br>
-                2 Paranoid Android<br>
-                3 Subterranean Homesick Alien<br>
-                4 Exit Music (For a Film)<br>
-                5 Let Down<br>
-                6 Karma Police<br>
-                7 Fitter Happier<br>
-                8 Electioneering<br>
-                9 Climbing Up the Walls<br>
-                10 No Surprises<br>
-                11 Lucky<br>
-                12 The Tourist"
-            >
+                                    <strong>TrackList:</strong><br>
+                                    1 Airbag<br>
+                                    2 Paranoid Android<br>
+                                    3 Subterranean Homesick Alien<br>
+                                    4 Exit Music (For a Film)<br>
+                                    5 Let Down<br>
+                                    6 Karma Police<br>
+                                    7 Fitter Happier<br>
+                                    8 Electioneering<br>
+                                    9 Climbing Up the Walls<br>
+                                    10 No Surprises<br>
+                                    11 Lucky<br>
+                                    12 The Tourist.">
 
                 <a href="detalleProductos.html" class="enlace-tarjeta">
-
-                    <img
-                        src="/images/okcomputer.jpg"
-                        alt="Radiohead - OK Computer"
-                    >
-
-                    <h3>
-                        Radiohead - OK Computer
-                    </h3>
-
-                    <p class="categoria-tag">
-                        Rock Alternativo
-                    </p>
-
-                    <p class="precio">
-                        $49.990
-                    </p>
-
+                    <img src="/images/okcomputer.jpg" alt="Radiohead - OK Computer"></imgsrc>                    
+                    <h3>Radiohead - OK Computer</h3>    
+                    <p class="categoria-tag">Rock Alternativo</p>
+                    <p class="precio">$49.990</p>
+                         
                 </a>
 
                 <div class="grupo-botones">
-
-                    <button class="btn-comprar">
-                        Agregar al Carrito
-                    </button>
-
+                    <button class="btn-comprar">Agregar al Carrito</button>
+                        
                 </div>
-
             </section>
 
-
         </div>
-
     </main>
 
 
     <footer>
-
-        <div class="contenido-footer">
-
-            <img
-                src="/images/Pagos_metodos.png"
-                alt="Métodos de pago"
-            >
-
+        <div class="contenido-footer">          
+            <img src="/images/Pagos_metodos.png" alt="Métodos de pago">
             <div class="texto-footer">
-
-                <p>
-                    &copy; 2026 CachimbaRecords - Todos los derechos reservados.
-                </p>
-
-                <p>
-                    Contactos: be.cespedess@duocuc.cl | benj.orellanas@duocuc.cl
-                </p>
-
+                <p>&copy; 2026 CachimbaRecords - Todos los derechos reservados.</p>
+                <p>Contactos: be.cespedess@duocuc.cl | benj.orellanas@duocuc.cl</p>
             </div>
-
         </div>
-
     </footer>
 
-
-    <script src="script.js"></script>
-
+      <script src="script.js"></script>
 </body>
-
 </html>
