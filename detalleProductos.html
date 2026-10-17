@@ -62,7 +62,6 @@
                 <h3>Sinopsis:</h3>
                 <div id="detalleDescripcion" class="texto-descripcion">Cargando descripción...</div>
 
-                <!-- Selector de Cantidad (Mockup) -->
                 <div class="selector-cantidad">
                     <label for="cantidadProducto">Cantidad:</label>
                     <select id="cantidadProducto">
@@ -81,11 +80,9 @@
             </div>
         </div>
 
-        <!-- Productos Relacionados -->
         <section class="seccion-relacionados">
             <h3>Productos Relacionados</h3>
             <div class="grid-productos" id="contenedorRelacionados">
-                <!-- Se puebla dinámicamente desde JavaScript -->
             </div>
         </section>
     </main>
@@ -100,6 +97,8 @@
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="supabase.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

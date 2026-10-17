@@ -3,32 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vinilos</title>
+    <title>Carrito de Compras - CachimbaRecords</title>
     <link href="styles.css" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-        <header class="cabeceraProductos">
-            <h1>Cachimba Records</h1>
-            <nav class="menu">
-                <a href="index.html">Home</a>
-                <a href="productos.html">Vinilos</a>
-                <a href="nosotros.html">Nosotros</a>
-                <a href="blogs.html">Blogs</a>
-                <a href="contacto.html">Contacto</a>
-                <a href="carrito.html" class="btn-carrito" title="Ver carrito">
-                🛒 <span class="carrito-contador">0</span>
-                </a>
-            </nav>
-        </header>
 
-        <nav class="InicioProductos">
-            <a href="inicioSesion.html">Iniciar sesion</a>
-            <a href="registro.html">Registrarse</a>
+    <header class="cabeceraProductos">
+        <h1>Cachimba Records</h1>
+        <nav class="menu">
+            <a href="index.html">Home</a>
+            <a href="productos.html">Vinilos</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="blogs.html">Blogs</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="carrito.html" class="btn-carrito" title="Ver carrito">
+                🛒 <span id="carrito-contador" class="carrito-contador">0</span>
+            </a>
         </nav>
+    </header>
+
+    <nav class="InicioProductos">
+        <a href="inicioSesion.html">Iniciar sesión</a>
+        <a href="registro.html">Registrarse</a>
+    </nav>
+
+    <main class="contenedor-tienda carrito-contenedor-principal">
+
+        <nav class="breadcrumbs">
+            <a href="index.html">Home</a> &gt; 
+            <span id="breadcrumbTitulo">Carrito de Compras</span>
+        </nav>
+        
+        <div class="carrito-header">
+            <h2>Carrito de Compras</h2>
+        </div>
+
+        <div class="carrito-layout">
+            
+            <!-- Columna Izquierda: Tabla/Lista de Productos -->
+            <section class="seccion-items-carrito">
+                <table class="tabla-carrito">
+                    <thead>
+                        <tr>
+                            <th>Producto</th>
+                            <th>Precio</th>
+                            <th>Cantidad</th>
+                            <th>Subtotal</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <!-- JS inyectará los <tr> de los vinilos dinámicamente aquí -->
+                    <tbody id="carrito-tbody">
+                        <!-- Limpio para renderizado dinámico -->
+                    </tbody>
+                </table>
+
+                <!-- Mensaje alternativo por si el carrito está vacío (opcional para JS) -->
+                <div id="carrito-vacio-msg" class="carrito-vacio-oculto" style="display: none;">
+                    <p>Tu carrito está vacío actualmente.</p>
+                </div>
+
+                <div class="acciones-tabla-carrito">
+                    <button id="btn-vaciar-carrito" class="btn-vaciar-carrito">Vaciar Carrito</button>
+                </div>
+            </section>
+
+            <aside class="resumen-pedido">
+                <h3>Resumen de Compra</h3>
+
+                <div class="grupo-resumen">
+                    <div class="fila-resumen">
+                        <span>Subtotal productos:</span>
+                        <span id="resumen-subtotal">$0</span>
+                    </div>
+
+                    <div class="fila-resumen">
+                        <span>Envío estimado:</span>
+                        <span id="resumen-envio" class="texto-gratis">GRATIS</span>
+                    </div>
+                </div>
+
+                <div class="cupon-descuento">
+                    <label for="codigo-cupon">¿Tienes un cupón?</label>
+                    <div class="input-cupon-grupo">
+                        <input type="text" id="codigo-cupon" placeholder="Ingresa tu código">
+                        <button id="btn-aplicar-cupon" class="btn-aplicar-cupon">Aplicar</button>
+                    </div>
+                </div>
+
+                <hr class="linea-separadora">
+
+                <div class="total-pedido">
+                    <span>Total a pagar:</span>
+                    <span id="resumen-total" class="precio-total">$0</span>
+                </div>
+
+                <button id="btn-pagar" class="btn-pagar">Proceder al Pago</button>
+
+                <div class="garantia-pago">
+                    <p>🔒 Compra 100% segura y protegida</p>
+                </div>
+            </aside>
+
+        </div>
+
+    </main>
 
     <footer>
         <div class="contenido-footer">          
@@ -40,6 +123,8 @@
         </div>
     </footer>
 
-      <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="supabase.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
