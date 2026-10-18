@@ -12,8 +12,17 @@
 </head>
 <body>
 
-    <!-- Contenedor unificado para que la imagen del banner cubra también la cabecera -->
-    <div class="hero-wrapper">
+<div class="hero-wrapper">
+    
+    <!-- Fondo Deslizante -->
+    <div class="carrusel-track">
+        <div class="slide slide-1"></div>
+        <div class="slide slide-2"></div>
+        <div class="slide slide-3"></div>
+    </div>
+
+    <!-- Capa de Contenido (Texto y Menú) -->
+    <div class="hero-contenido">
         <header class="cabecera">
             <h1>Cachimba Records</h1>
             <nav class="menu">
@@ -22,39 +31,28 @@
                 <a href="nosotros.html">Nosotros</a>
                 <a href="blogs.html">Blogs</a>
                 <a href="contacto.html">Contacto</a>
-                <a href="carrito.html" class="btn-carrito" title="Ver carrito"> 
-                🛒 <span class="carrito-contador">0</span>
+                <a href="carrito.html" class="btn-carrito" title="Ver carrito">
+                    🛒 <span class="carrito-contador">0</span>
                 </a>
-
-                <!-- Desplegable Categorias -->
-                <!-- <div class="dropdown-categoria">
-                    <button class="dropdown-btn">CATEGORÍAS ▾</button>
-                    <div class="dropdown-content">
-                        <a href="">Desplegable 1</a>
-                        <a href="">Desplegable 2</a>
-                        <a href="">Desplegable 3</a>
-                        <a href="">Desplegable 4</a>
-                    </div>
-                </div> -->
             </nav>
         </header>
 
         <nav class="Inicio">
             <a href="inicioSesion.html">Iniciar sesion</a>
             <a href="registro.html">registrarse</a>
-
         </nav>
 
         <section class="hero">
             <h2>¡Musica para regalar!</h2>
             <p>Encuentra tus vinilos favoritos con envío a todo el país.</p>
-            
-            <form class="buscador" id="form-busqueda">
-                <input type="text" id="input-busqueda" placeholder="Buscar Producto...">
-                <button type="submit">🔍</button>
-            </form>
+            <div class="buscador">
+                <input type="text" placeholder="Buscar Producto...">
+                <button type="button">🔍</button>
+            </div>
         </section>
     </div>
+
+</div>
 
     <!-- Seccion de Productos -->
     <main class="contenedor-tienda">
