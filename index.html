@@ -12,22 +12,32 @@
 </head>
 <body>
 
-<div class="hero-wrapper">
+<div>
+    <header class="cabeceraEnvio">
+        <h1>🚚 Envío gratis en compras sobre $90.000!</h1>
+    </header>
+</div>
     
-    <!-- Fondo Deslizante -->
+<div class="hero-wrapper">
     <div class="carrusel-track">
         <div class="slide slide-1"></div>
         <div class="slide slide-2"></div>
         <div class="slide slide-3"></div>
     </div>
 
-    <!-- Capa de Contenido (Texto y Menú) -->
     <div class="hero-contenido">
         <header class="cabecera">
             <h1>Cachimba Records</h1>
             <nav class="menu">
                 <a href="index.html">Home</a>
-                <a href="productos.html">Vinilos</a>
+                <!-- Desplegable Categorias -->
+                <div class="dropdown-categoria">
+                    <a href="productos.html" class="dropdown-btn">Vinilos ▾</a>
+                    <div class="dropdown-content">
+                        <a href="ProductosNuevos.html">Nuevos</a>
+                        <a href="ProductosOferta.html">Ofertas</a>
+                    </div>
+                </div>
                 <a href="nosotros.html">Nosotros</a>
                 <a href="blogs.html">Blogs</a>
                 <a href="contacto.html">Contacto</a>
